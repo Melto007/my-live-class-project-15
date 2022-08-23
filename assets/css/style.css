@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap'); 
+
+:root {
+    --main-color: #d63031;
+    --black-color: #0D0D0D;
+    --light-black-color: #1A1A1A;
+    --dark-white-color: #dfe6e9;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-color);
+}
+
+header {
+    padding: 0 4rem;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.item-lists {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.item-list a {
+    text-decoration: none;
+    font-family: 'Nunito',sans-serif;
+    color: var(--dark-white-color);
+    font-weight: 600;
+}
+
+.item-list a i {
+    margin-left: 0.2rem;
+}
+
+@media screen and (max-width: 880px) {
+    .item-lists {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .item-lists {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        padding: 0 2rem;
+    }
+
+    .item-list a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    nav img {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-bar {
+        display: block;
+        color: #fff;
+    }
+
+    .item-lists {
+        display: none;
+    }
+}
+
+/* End of Navbar ****************************************************/
+
+.banner {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.banner img {
+    margin-right: 4rem;
+}
+
+.banner-right-section {
+    align-self: center;
+    color: var(--white-color);
+}
+
+.banner-right-section p:nth-child(1) {
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.3rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.banner-right-section h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: 'Nunito',sans-serif;
+}
+
+.banner-right-section p:nth-child(3) {
+    font-family: 'Nunito',sans-serif;
+    font-size: 1rem;
+    color: var(--dark-white-color);
+    margin-bottom: 1.3rem;
+}
+
+.banner-right-section button {
+    padding: 0.7rem 2rem;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+    .banner {
+        padding: 0 3rem;
+    }
+
+    .banner img {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .banner {
+        padding: 0 2rem;
+    }
+
+    .banner img {
+        margin-right: 1rem;
+    }
+
+    .banner-right-section h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: 'Nunito',sans-serif;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner img {
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .banner {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner {
+        padding: 0 1rem;
+    }
+}
+
+/* End of Banner *********************************************************/
+.top-main {
+    padding: 5rem 10rem; 
+    background: linear-gradient(to right, #171717 50%, #0D0D0D 50%);
+}
+
+.middle-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    color: var(--white-color);
+    font-family: 'Nunito',sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 35vh;
+    background-color: var(--light-black-color);
+    padding: 2rem 2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--main-color);
+    margin-left: 0.6rem;
+}
+
+.card h3 {
+    margin-left: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-weight: 800;
+}
+
+.card p {
+    margin-left: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: var(--dark-white-color);
+}
+
+.active-card {
+    background-color: var(--main-color);
+}
+
+.active-card a {
+    color: var(--white-color);
+}
+
+.active-card a i {
+    color: var(--white-color);
+}
+
+.card a i {
+    margin-left: 0.4rem;
+}
+
+.card img {
+    width: 20%;
+    margin-bottom: 0.6rem;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.middle-section-2 {
+    margin-top: 6rem;
+    font-family: 'Nunito',sans-serif;
+    color: var(--white-color);
+}
+
+.middle-section-2 h1 {
+    color: var(--main-color);
+}
+
+.experience-details {
+    width: 36%;
+}
+
+.experience-details h1 {
+    margin-left: 1.5rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.experience-details p {
+    font-size: 2rem;
+}
+
+.experience-card {
+    text-align: center;
+}
+
+.experience-card h1 {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.experience-card p {
+    color: var(--dark-white-color);
+}
+
+.project-details {
+    width: 74%;
+}
+
+.bottom-main {
+    margin-top: 4rem;
+    padding: 0 10rem;
+}
+
+.experience-card {
+    background-color: var(--light-black-color);
+    width: 100%;
+    height: 20vh;
+}
+
+.bottom-top-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.featured {
+    color: var(--white-color);
+    font-family: 'Nunito',sans-serif;
+}
+
+.featured h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.featured p {
+    font-size: 0.8rem;
+    color: var(--dark-white-color);
+    margin-bottom: 1rem;
+}
+
+.featured-card img {
+    width: 100%;
+}
+
+.view-button {
+    text-align: end;
+}
+
+.view-button button {
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+    color: var(--white-color);
+}
+
+.featured-card {
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    font-family: 'Nunito',sans-serif;
+}
+
+.featured-card h1 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.featured-card a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+.featured-card i {
+    margin-left: 0.2rem;
+}
+
+.card-img {
+    background-color: var(--light-black-color);
+    padding: 2rem 2em;
+}
+
+.bottom-top {
+    margin: 2rem 8rem;
+    background-color: var(--light-black-color);
+    padding: 2rem 2rem;
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    font-family: 'Nunito',sans-serif;
+}
+
+.bottom-div {
+    flex: 1.5;
+}
+
+.bottom-div h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.bottom-div p {
+    font-size: 0.8rem;
+    color: var(--dark-white-color);
+}
+
+.bottom-div-button {
+    flex: 0.5;
+    text-align: center;
+}
+
+.bottom-div-button button {
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border: none;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-family: 'Nunito',sans-serif;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: var(--dark-white-color);
+}
+
+.footer-menu p {
+    margin-bottom: 1.2rem;
+}
+
+.footer-menu-item {
+    background-color: var(--light-black-color);
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.footer-logo {
+    flex: 0.8;
+}
+
+.footer-social {
+    flex: 1.2;
+}
+
+.footer-social i {
+    color: var(--white-color);
+    margin-left: 2rem;
+    font-size: 0.8rem;
+}
+
+.footer-menu-item img {
+    width: 20%;
+}
+
+@media screen and (max-width: 1020px) {
+    .top-main {
+        padding: 5rem 4rem; 
+    }
+
+    .card a {
+        font-size: 0.8rem;
+    }
+    
+    .card h3 {
+        font-size: 1rem;
+    }
+    
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 2rem 1rem;
+    }
+
+    .bottom-main {
+        padding: 0 4rem;
+    }
+
+    .bottom-top {
+        margin: 2rem 4rem;
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .top-main {
+        padding: 5rem 1rem; 
+        background: linear-gradient(to right, #171717 50%, #0D0D0D 50%);
+    }
+
+    .card a {
+        margin-left: 0.2rem;
+    }
+    
+    .card h3 {
+        margin-left: 0.2rem;
+        margin-bottom: 0.3rem;
+        font-size: ;
+    }
+    
+    .card p {
+        margin-left: 0.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .experience-details h1 {
+        font-size: 2.5rem;
+    }
+    
+    .experience-details p {
+        font-size: 1.4rem;
+    }
+
+    .experience-card h1 {
+        font-size: 2rem;
+    }
+
+    .experience-card p {
+        font-size: 0.8rem;
+    }
+
+    .bottom-main {
+        padding: 0 1rem;
+    }
+
+    .bottom-top {
+        margin: 2rem 1rem;
+    }
+
+    .bottom-div h1 {
+        font-size: 1.4rem;
+    }
+
+    .footer-logo img {
+        width: 4rem;
+    }
+
+    .footer-menu-item {
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .featured-card h1 {
+        font-size: 0.9rem;
+    }
+
+    .featured-card p {
+        font-size: 0.7rem;
+    }
+
+    .view-button button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .bottom-top {
+       flex-direction: column;
+    }
+
+    .bottom-div h1{
+        font-size: 1.2rem;
+    }
+    
+    .bottom-div p {
+        font-size: 0.7rem;
+    }
+
+    .bottom-div-button button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.7rem;
+        margin-top: 1rem;
+    }
+
+    .footer-menu-item {
+        padding: 2rem 2rem;
+    }
+
+    .footer-menu {
+        gap: 1rem;
+    }
+
+    .card-img {
+        background-color: var(--light-black-color);
+        padding: 1rem 1em;
+      
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .featured h1{
+        font-size: 1rem;
+    }
+
+    .featured-card h1 {
+        font-size: 0.8rem;
+    }
+
+    .footer-social i {
+        margin-left: 1rem;
+    }
+
+    .footer-menu-item {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .experience-details h1 {
+        font-size: 2.2rem;
+    }
+    
+    .experience-details p {
+        font-size: 1rem;
+    }
+
+    .experience-details h4 {
+        font-size: 0.8rem;
+    }
+
+    .experience-card h1 {
+        font-size: 1.5rem;
+    }
+
+    .experience-card p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .featured-card h1 {
+        font-size: 0.8rem;
+    }
+
+    .featured h1{
+        font-size: 0.9rem;
+    }
+
+    .featured p{
+        font-size: 0.7rem;
+    }
+}
